@@ -15,7 +15,7 @@ format=${1-shell}
 # Json function
 json_list_conf() {
     lines=$(wc -l $VESTA/conf/vesta.conf | cut -f 1 -d ' ')
-    i='0'
+    i='-1'
     IFS=$'\n'
     echo -e "{\n\t\"config\": {"
     for str in $(cat $VESTA/conf/vesta.conf); do
